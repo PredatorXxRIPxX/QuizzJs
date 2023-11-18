@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+main{
+    background-color: #296CA9;
+    width: 70%;
+    height: 50rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.container{
+    border-radius: 15px;
+    background-color: #3182ce;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 50%;
+    border-radius: 20px;
+    background-color: white;
+    color: #222;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    margin: 1rem 0rem;
+    transition: all .5s ease-in-out;
+}
+input:focus{
+    transform: scale(1.1);
+    border: none;
+    box-shadow: 15px 15px 12px 0px rgba(0, 0, 0, .5);
+}
+aside{
+    height: 25rem;
+    width: 100%;
+    padding: 1rem;
+    margin: .75rem .25rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.hide {
+    display: none;
+    text-align: center;
+    animation-name: answer;
+    animation-iteration-count: infinite;
+    transition: all .5s ease-in-out;
+}
+.questions{
+    position: relative;
+    width: 85%;
+    height: 50px;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    color: #296CA9;
+    cursor: pointer;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem;
+}
+.noti{
+    cursor: pointer;
+    position: absolute;
+    color: black;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.detail{
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.questions .qst{
+    text-align: center;
+    display:block;
+    height: fit-content;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+.questions:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, .5);
+}
+
+@keyframes answer {
+    
+}
+
